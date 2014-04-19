@@ -14,6 +14,7 @@
 		4732D5121902DC1100914951 /* SKTUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4732D50D1902DC1100914951 /* SKTUtils.mm */; };
 		4732D5161902DFB100914951 /* PNEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4732D5151902DFB100914951 /* PNEntity.m */; };
 		4732D5191902E2A100914951 /* PNPlayerShip.m in Sources */ = {isa = PBXBuildFile; fileRef = 4732D5181902E2A100914951 /* PNPlayerShip.m */; };
+		4732D51C1902F13C00914951 /* PNBullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4732D51B1902F13C00914951 /* PNBullet.m */; };
 		474A1F1519026B5C00897ABC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474A1F1419026B5C00897ABC /* Foundation.framework */; };
 		474A1F1719026B5C00897ABC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474A1F1619026B5C00897ABC /* CoreGraphics.framework */; };
 		474A1F1919026B5C00897ABC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474A1F1819026B5C00897ABC /* UIKit.framework */; };
@@ -24,7 +25,6 @@
 		474A1F2A19026B5C00897ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474A1F2819026B5C00897ABC /* Main.storyboard */; };
 		474A1F2D19026B5C00897ABC /* PNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474A1F2C19026B5C00897ABC /* PNViewController.m */; };
 		474A1F3019026B5C00897ABC /* PNMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 474A1F2F19026B5C00897ABC /* PNMyScene.m */; };
-		474A1F3219026B5C00897ABC /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 474A1F3119026B5C00897ABC /* Spaceship.png */; };
 		474A1F3419026B5C00897ABC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474A1F3319026B5C00897ABC /* Images.xcassets */; };
 		474A1F3B19026B5C00897ABC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474A1F3A19026B5C00897ABC /* XCTest.framework */; };
 		474A1F3C19026B5C00897ABC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474A1F1419026B5C00897ABC /* Foundation.framework */; };
@@ -59,6 +59,8 @@
 		4732D5151902DFB100914951 /* PNEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNEntity.m; sourceTree = "<group>"; };
 		4732D5171902E2A100914951 /* PNPlayerShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPlayerShip.h; sourceTree = "<group>"; };
 		4732D5181902E2A100914951 /* PNPlayerShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPlayerShip.m; sourceTree = "<group>"; };
+		4732D51A1902F13C00914951 /* PNBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBullet.h; sourceTree = "<group>"; };
+		4732D51B1902F13C00914951 /* PNBullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBullet.m; sourceTree = "<group>"; };
 		474A1F1119026B5C00897ABC /* XBlaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBlaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		474A1F1419026B5C00897ABC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		474A1F1619026B5C00897ABC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,7 +77,6 @@
 		474A1F2C19026B5C00897ABC /* PNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNViewController.m; sourceTree = "<group>"; };
 		474A1F2E19026B5C00897ABC /* PNMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNMyScene.h; sourceTree = "<group>"; };
 		474A1F2F19026B5C00897ABC /* PNMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNMyScene.m; sourceTree = "<group>"; };
-		474A1F3119026B5C00897ABC /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		474A1F3319026B5C00897ABC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		474A1F3919026B5C00897ABC /* XBlasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBlasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		474A1F3A19026B5C00897ABC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -134,6 +135,8 @@
 				4732D5151902DFB100914951 /* PNEntity.m */,
 				4732D5171902E2A100914951 /* PNPlayerShip.h */,
 				4732D5181902E2A100914951 /* PNPlayerShip.m */,
+				4732D51A1902F13C00914951 /* PNBullet.h */,
+				4732D51B1902F13C00914951 /* PNBullet.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -182,7 +185,6 @@
 				474A1F2C19026B5C00897ABC /* PNViewController.m */,
 				474A1F2E19026B5C00897ABC /* PNMyScene.h */,
 				474A1F2F19026B5C00897ABC /* PNMyScene.m */,
-				474A1F3119026B5C00897ABC /* Spaceship.png */,
 				474A1F3319026B5C00897ABC /* Images.xcassets */,
 				474A1F1D19026B5C00897ABC /* Supporting Files */,
 			);
@@ -314,7 +316,6 @@
 				474A1F5119026D1700897ABC /* thirteen_pixel_fonts.ttf in Resources */,
 				474A1F2119026B5C00897ABC /* InfoPlist.strings in Resources */,
 				474A1F3419026B5C00897ABC /* Images.xcassets in Resources */,
-				474A1F3219026B5C00897ABC /* Spaceship.png in Resources */,
 				474A1F2A19026B5C00897ABC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +338,7 @@
 				474A1F3019026B5C00897ABC /* PNMyScene.m in Sources */,
 				4732D5111902DC1100914951 /* SKTAudio.m in Sources */,
 				4732D5161902DFB100914951 /* PNEntity.m in Sources */,
+				4732D51C1902F13C00914951 /* PNBullet.m in Sources */,
 				4732D5191902E2A100914951 /* PNPlayerShip.m in Sources */,
 				474A1F2719026B5C00897ABC /* PNAppDelegate.m in Sources */,
 				4732D50F1902DC1100914951 /* SKEmitterNode+SKTExtras.m in Sources */,

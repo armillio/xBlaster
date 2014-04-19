@@ -37,6 +37,7 @@
         SKView *textureView = [SKView new];
         texture = [textureView textureFromNode:mainShip];
         texture.filteringMode = SKTextureFilteringNearest;
+
     });
     
     return texture;

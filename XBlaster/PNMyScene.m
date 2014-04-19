@@ -8,6 +8,7 @@
 
 #import "PNMyScene.h"
 #import "PNPlayerShip.h"
+#import "PNBullet.h"
 
 @implementation PNMyScene {
     SKNode *_playerLayerNode;
@@ -21,6 +22,12 @@
     PNPlayerShip *_playerShip;
     
     CGPoint _deltaPoint;
+    
+    PNBullet *_bullet;
+    
+    float _bulletInterval;
+    CFTimeInterval _lastUpdateTime;
+    NSTimeInterval _dt;
 }
 
 -(id)initWithSize:(CGSize)size {    
@@ -44,6 +51,27 @@
     
     _playerShip.position = newPoint;
     _deltaPoint = CGPointZero;
+    
+    if (_lastUpdateTime) {
+        _dt = currentTime - _lastUpdateTime;
+    } else {
+        _dt = 0;
+    }
+    
+    _lastUpdateTime = currentTime;
+    _bulletInterval += _dt;
+    
+    if (_bulletInterval > 0.15) {
+        _bulletInterval = 0;
+        // 1: Create Bullet
+        PNBullet *bullet = [[PNBullet alloc] initWithPosition:_playerShip.position];
+        // 2: Add to scene
+        [self addChild:bullet];
+        // 3: Sequence: Move up screen, remove from parent
+        SKAction *actionMove = [SKAction moveToY:self.size.height duration:2.0];
+        SKAction *actionRemove = [SKAction removeFromParent];
+        [bullet runAction:[SKAction sequence:@[actionMove, actionRemove]]];
+    }
 }
 
 -(void) setupSceneLayers{
